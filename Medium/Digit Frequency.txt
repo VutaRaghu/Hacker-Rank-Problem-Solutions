@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int main() 
+{ 
+    char a[1009]; 
+    gets(a);
+    int i = 0, b[10]={0,0,0,0,0,0,0,0,0,0}, k, c, j, d,e;
+
+    while (a[i] != '\0')
+    {
+        for (d = 0; d < 10; d++) 
+        {
+            e=d+'0';
+            if (a[i] == e) 
+            {
+                b[d]++;
+            }
+        }
+
+        i++;
+    }
+    for (j = 0; j < 10; j++)
+    { 
+        printf("%d ", b[j]);
+    }
+}
+  
